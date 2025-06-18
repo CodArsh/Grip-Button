@@ -1,6 +1,6 @@
 {
   "name": "@arsil_malek/grip-button",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "index.js",
   "types": "index.d.ts",
   "description": "A customizable and animated button for React Native",

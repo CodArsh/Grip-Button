@@ -2,7 +2,6 @@
 
 ![GripButton Demo](https://github.com/CodArsh/hello-name/blob/main/assets/DemoFile.gif)
 
-<small>GripButton is a powerful, flexible, and animated cross-platform button component for React Native. It supports multiple variants, colors, icons, badges, and built-in animations – perfect for modern UI/UX needs.</small>
 ---
 
 
@@ -32,8 +31,6 @@ yarn add @arsil_malek/grip-button
 
 🎯 Debounced press
 
-🎉 Badge count
-
 💫 Press animations: scale, punch, none
 
 🔵 Continuous border animation (for special variants)
@@ -58,7 +55,6 @@ const MyScreen = () => {
       variant="dashed"
       colorType="error"
       icon={<Text>🗑️</Text>}
-      badgeCount={3}
       animationType="scale"
       titleCase="capitalize"
       shape="pill"
@@ -82,14 +78,12 @@ const MyScreen = () => {
 | `iconPosition`    | `'left'` \| `'right'`                                                                                     | Icon placement relative to title.           |
 | `disabled`        | `boolean`                                                                                                 | Disable interaction.                        |
 | `loading`         | `boolean`                                                                                                 | Show loading spinner instead of title.      |
-| `badgeCount`      | `number`                                                                                                  | Show a badge number in the corner.          |
 | `titleCase`       | `'uppercase'` \| `'capitalize'` \| `'none'`                                                               | Case style of the title text.               |
 | `animationType`   | `'scale'` \| `'punch'` \| `'none'`                                                                        | Press animation variant.                    |
 | `debounced`       | `boolean`                                                                                                 | Prevents rapid re-pressing.                 |
 | `ripple`          | `boolean`                                                                                                 | Enables ripple effect on Android.           |
 | `style`           | `ViewStyle`                                                                                               | Custom style for the button container.      |
 | `textStyle`       | `TextStyle`                                                                                               | Custom style for the text.                  |
-| `badgeStyle`      | `ViewStyle`                                                                                               | Style override for the badge.               |
 | `loaderColor`     | `string`                                                                                                  | Custom color for loading spinner.           |
 | `borderAnimation` | `boolean`                                                                                                 | Adds animated glowing border around button. |
 ---
