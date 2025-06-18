@@ -1,0 +1,99 @@
+# 🚀 GripButton – React Native Animated UI
+
+![GripButton Demo](https://github.com/CodArsh/hello-name/blob/main/assets/DemoFile.gif)
+
+GripButton is a powerful, flexible, and animated cross-platform button component for React Native. It supports multiple variants, colors, icons, badges, and built-in animations – perfect for modern UI/UX needs.
+---
+
+
+## 📦 Installation
+
+```bash
+npm install @arsh/grip-button
+# or
+yarn add @arsh/grip-button
+```
+---
+
+
+## ⚡ Features
+
+🌀 8+ Variants: solid, outline, clear, dashed, ghost, link, elevated, glass
+
+🎨 Theme colors: info, success, error, warning, etc.
+
+🧱 Sizes: small, medium, large
+
+🔒 Disabled state
+
+🔁 Loading state
+
+🔘 Icons with position control
+
+🎯 Debounced press
+
+🎉 Badge count
+
+💫 Press animations: scale, punch, none
+
+🔵 Continuous border animation (for special variants)
+
+🧩 Custom styles, ripple effects, and shape options
+
+🔤 Title formatting: uppercase, capitalize, none
+
+---
+
+
+## ⚙️ Usage
+```
+import React from 'react';
+import { Text } from 'react-native';
+import { GripButton } from '@arsil_malek/grip-button';
+
+const MyScreen = () => {
+  return (
+    <GripButton
+      title="Delete"
+      variant="dashed"
+      colorType="error"
+      icon={<Text>🗑️</Text>}
+      badgeCount={3}
+      animationType="scale"
+      titleCase="capitalize"
+      shape="pill"
+      onPress={() => alert('Deleted!')}
+    />
+  );
+};
+```
+---
+
+## 📋 Props
+| Parameter         | Type                                                                                                      | Description                                 |
+| ----------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| `title`           | `string`                                                                                                  | The text label of the button.               |
+| `onPress`         | `() => void`                                                                                              | Function to call on button press.           |
+| `variant`         | `'solid'` \| `'outline'` \| `'clear'` \| `'dashed'` \| `'ghost'` \| `'link'` \| `'elevated'` \| `'glass'` | Style variant of the button.                |
+| `colorType`       | `'info'` \| `'success'` \| `'error'` \| `'warning'`                                                       | Button color scheme.                        |
+| `size`            | `'small'` \| `'medium'` \| `'large'`                                                                      | Controls button size.                       |
+| `shape`           | `'rounded'` \| `'pill'` \| `'square'`                                                                     | Border radius styling.                      |
+| `icon`            | `ReactNode`                                                                                               | Optional icon inside the button.            |
+| `iconPosition`    | `'left'` \| `'right'`                                                                                     | Icon placement relative to title.           |
+| `disabled`        | `boolean`                                                                                                 | Disable interaction.                        |
+| `loading`         | `boolean`                                                                                                 | Show loading spinner instead of title.      |
+| `badgeCount`      | `number`                                                                                                  | Show a badge number in the corner.          |
+| `titleCase`       | `'uppercase'` \| `'capitalize'` \| `'none'`                                                               | Case style of the title text.               |
+| `animationType`   | `'scale'` \| `'punch'` \| `'none'`                                                                        | Press animation variant.                    |
+| `debounced`       | `boolean`                                                                                                 | Prevents rapid re-pressing.                 |
+| `ripple`          | `boolean`                                                                                                 | Enables ripple effect on Android.           |
+| `style`           | `ViewStyle`                                                                                               | Custom style for the button container.      |
+| `textStyle`       | `TextStyle`                                                                                               | Custom style for the text.                  |
+| `badgeStyle`      | `ViewStyle`                                                                                               | Style override for the badge.               |
+| `loaderColor`     | `string`                                                                                                  | Custom color for loading spinner.           |
+| `borderAnimation` | `boolean`                                                                                                 | Adds animated glowing border around button. |
+---
+
+# 🙋‍♂️ Author
+Developed by ❤️ by Arsil Malek
+
