@@ -2,16 +2,16 @@
 
 ![GripButton Demo](https://github.com/CodArsh/hello-name/blob/main/assets/DemoFile.gif)
 
-GripButton is a powerful, flexible, and animated cross-platform button component for React Native. It supports multiple variants, colors, icons, badges, and built-in animations – perfect for modern UI/UX needs.
+<small>GripButton is a powerful, flexible, and animated cross-platform button component for React Native. It supports multiple variants, colors, icons, badges, and built-in animations – perfect for modern UI/UX needs.</small>
 ---
 
 
 ## 📦 Installation
 
 ```bash
-npm install @arsh/grip-button
+npm install @arsil_malek/grip-button
 # or
-yarn add @arsh/grip-button
+yarn add @arsil_malek/grip-button
 ```
 ---
 
