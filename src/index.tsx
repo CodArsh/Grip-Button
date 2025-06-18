@@ -64,7 +64,8 @@ const SIZES = {
   large: { paddingVertical: 14, paddingHorizontal: 20, fontSize: 18 },
 };
 
-export const GripButton: React.FC<GripButtonProps> = ({
+
+const GripButton: React.FC<GripButtonProps> = ({
   title,
   onPress,
   disabled = false,
@@ -116,12 +117,12 @@ export const GripButton: React.FC<GripButtonProps> = ({
   const shadowStyle =
     variant === 'elevated' && !disabled
       ? {
-          shadowColor: '#000',
-          shadowOffset: { width: 0, height: 2 },
-          shadowOpacity: 0.25,
-          shadowRadius: 3.84,
-          elevation: 5,
-        }
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+      }
       : {};
 
   const containerStyle: ViewStyle = {
@@ -254,6 +255,8 @@ export const GripButton: React.FC<GripButtonProps> = ({
   );
 };
 
+export default GripButton;
+module.exports = GripButton
 const styles = StyleSheet.create({
   badge: {
     position: 'absolute',

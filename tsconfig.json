@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "target": "ES6",
-    "module": "ES6",
-    "lib": ["ES6", "DOM"],
+    "module": "ESNext",
     "declaration": true,
-    "jsx": "react-native",
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react",
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "strict": true
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node"
   },
-  "include": ["src", "index.ts"]
+  "include": ["src"]
 }
