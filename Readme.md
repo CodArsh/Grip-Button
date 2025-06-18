@@ -8,9 +8,9 @@
 ## 📦 Installation
 
 ```bash
-npm install @arsil_malek/grip-button
+npm install react-native-grip-button
 # or
-yarn add @arsil_malek/grip-button
+yarn add react-native-grip-button
 ```
 ---
 
@@ -46,7 +46,7 @@ yarn add @arsil_malek/grip-button
 ```
 import React from 'react';
 import { Text } from 'react-native';
-import { GripButton } from '@arsil_malek/grip-button';
+import { GripButton } from 'react-native-grip-button';
 
 const MyScreen = () => {
   return (
